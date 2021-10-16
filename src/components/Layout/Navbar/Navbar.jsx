@@ -11,10 +11,9 @@ const Navbar = () => {
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              {" "}
-              <span class="icon icon-bar"></span>{" "}
-              <span class="icon icon-bar"></span>{" "}
-              <span class="icon icon-bar"></span>{" "}
+              <span class="icon icon-bar"></span>
+              <span class="icon icon-bar"></span>
+              <span class="icon icon-bar"></span>
             </button>
             <p class="navbar-brand">Ulrich Waffen</p>
           </div>
