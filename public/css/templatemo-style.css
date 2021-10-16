@@ -158,19 +158,22 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 	margin: 0 !important;
 }
 .navbar-default .navbar-brand {
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	margin: 0;
 	line-height: 40px !important;
 }
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li p {
 	color: #606060;
 	font-weight: bold;
 	padding-right: 20px;
 	padding-left: 20px;
 	line-height: 40px;
+	padding-top: 15px;
+	cursor: pointer;
 }
-.navbar-default .navbar-nav li a:hover {
+
+.navbar-default .navbar-nav li p:hover {
 	color: #eb5424;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
