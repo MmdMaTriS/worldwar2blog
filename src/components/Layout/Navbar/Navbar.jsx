@@ -16,46 +16,28 @@ const Navbar = () => {
               <span class="icon icon-bar"></span>{" "}
               <span class="icon icon-bar"></span>{" "}
             </button>
-            <a href="#" class="navbar-brand">
-              Impulse
-            </a>
+            <p class="navbar-brand">Ulrich Waffen</p>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="#home" class="smoothScroll">
-                  HOME
-                </a>
+                <p>HOME</p>
+              </li>
+
+              <li>
+                <p>Wars</p>
               </li>
               <li>
-                <a href="#intro" class="smoothScroll">
-                  INTRO
-                </a>
+                <p>Generals</p>
               </li>
               <li>
-                <a href="#work" class="smoothScroll">
-                  WORK
-                </a>
+                <p>Countries</p>
               </li>
               <li>
-                <a href="#team" class="smoothScroll">
-                  TEAM
-                </a>
+                <p>Allies</p>
               </li>
               <li>
-                <a href="#portfolio" class="smoothScroll">
-                  PORTFOLIO
-                </a>
-              </li>
-              <li>
-                <a href="#price" class="smoothScroll">
-                  PRICE
-                </a>
-              </li>
-              <li>
-                <a href="#contact" class="smoothScroll">
-                  CONTACT
-                </a>
+                <p>Contact</p>
               </li>
             </ul>
           </div>

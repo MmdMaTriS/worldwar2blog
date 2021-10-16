@@ -63,16 +63,7 @@ const Footer = () => {
               </ul>
             </div>
             <div class="col-md-12 col-sm-12 copyright">
-              <p>
-                Copyright © 2084 Company Name | Template by{" "}
-                <a
-                  target="_blank"
-                  rel="nofollow"
-                  href="http://www.templatemo.com/tm-469-impulse"
-                >
-                  Impulse Design
-                </a>
-              </p>
+              <p>Copyright © 2022 Ulrich Team | All Right reversed.</p>
             </div>
           </div>
         </div>
