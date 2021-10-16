@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Countries from "./pages/Countries/Countries";
 import Generals from "./pages/Generals/Generals";
 import Wars from "./pages/Wars/Wars";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
         </Route>
         <Route path="/wars">
           <Wars />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Layout>
