@@ -7,6 +7,14 @@ import Countries from "./pages/Countries/Countries";
 import Generals from "./pages/Generals/Generals";
 import Wars from "./pages/Wars/Wars";
 import Contact from "./components/Contact/Contact";
+import AlliesSingle from "./pages/AlliesSingle/AlliesSingle";
+
+import "./css/nivo_themes/default/default.css";
+import "./css/animate.min.css";
+import "./css/bootstrap.min.css";
+import "./css/templatemo-style.css";
+import "./css/nivo-lightbox.css";
+import "./css/font-awesome.min.css";
 
 function App() {
   return (
@@ -15,21 +23,27 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/allies">
+        <Route path="/allies" exact>
           <Allies />
         </Route>
-        <Route path="/countries">
+        <Route path="/countries" exact>
           <Countries />
         </Route>
-        <Route path="/generals">
+        <Route path="/generals" exact>
           <Generals />
         </Route>
-        <Route path="/wars">
+        <Route path="/wars" exact>
           <Wars />
         </Route>
         <Route path="/contact">
           <Contact />
         </Route>
+        <Route path="/country/:id"></Route>
+        <Route path="/allie/akbar" exact>
+          <AlliesSingle />
+        </Route>
+        <Route path="/war/:id"></Route>
+        <Route path="/general/:id"></Route>
       </Switch>
     </Layout>
   );

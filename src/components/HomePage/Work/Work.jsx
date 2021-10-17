@@ -16,19 +16,19 @@ const Work = () => {
               </p>
             </div>
             <div class="col-md-8 col-sm-8">
-              <div class="col-md-6 col-sm-6 bg-black">
+              <div class="col-md-6 col-sm-6 bg-red">
                 <i class="fa fa-mobile"></i>
                 <h3>Mobile UX</h3>
               </div>
-              <div class="col-md-6 col-sm-6 bg-red">
+              <div class="col-md-6 col-sm-6 bg-black">
                 <i class="fa fa-cloud"></i>
                 <h3>Social media</h3>
               </div>
-              <div class="col-md-6 col-sm-6 bg-red">
+              <div class="col-md-6 col-sm-6 bg-black">
                 <i class="fa fa-link"></i>
                 <h3>Web Design</h3>
               </div>
-              <div class="col-md-6 col-sm-6 bg-black">
+              <div class="col-md-6 col-sm-6 bg-red">
                 <i class="fa fa-globe"></i>
                 <h3>SEO</h3>
               </div>

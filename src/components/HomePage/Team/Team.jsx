@@ -30,7 +30,7 @@ const Team = () => {
             </div>
             <div
               class="col-md-4 col-sm-4 col-xs-6 wow fadeIn"
-              data-wow-delay="1.3s"
+              data-wow-delay="0.9s"
             >
               <img
                 src="images/team2.jpg"
@@ -44,7 +44,7 @@ const Team = () => {
             </div>
             <div
               class="col-md-4 col-sm-4 col-xs-6 wow fadeIn"
-              data-wow-delay="1.6s"
+              data-wow-delay="0.9s"
             >
               <img
                 src="images/team3.jpg"
