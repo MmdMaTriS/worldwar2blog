@@ -74,7 +74,7 @@ h6 {
 	background-size: cover !important;
 }
 /* preloader section */
-.preloader {
+/* .preloader {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -117,7 +117,7 @@ transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
 -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 }
-}
+} */
 /* home section */
 #home {
 	background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;

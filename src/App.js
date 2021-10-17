@@ -10,8 +10,8 @@ import Contact from "./components/Contact/Contact";
 import AlliesSingle from "./pages/AlliesSingle/AlliesSingle";
 
 import "./css/nivo_themes/default/default.css";
-import "./css/animate.min.css";
 import "./css/bootstrap.min.css";
+import "./css/animate.min.css";
 import "./css/templatemo-style.css";
 import "./css/nivo-lightbox.css";
 import "./css/font-awesome.min.css";
