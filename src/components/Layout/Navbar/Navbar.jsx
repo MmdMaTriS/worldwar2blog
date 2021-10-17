@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-
+window.onscroll = function () {};
 const Navbar = () => {
   return (
     <>
-      <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div
+        class="navbar navbar-default navbar-static-top"
+        role="navigation"
+        id="nav12"
+      >
         <div class="container">
           <div class="navbar-header">
             <button
