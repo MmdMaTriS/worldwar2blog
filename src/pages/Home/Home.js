@@ -10,7 +10,7 @@ import audioT from "../../images/Tirailleur.mp3";
 const Home = () => {
   return (
     <>
-      <audio autoPlay id="myaudio">
+      <audio id="myaudio">
         <source src={audioT} type="audio/ogg" />
         Your browser does not support the audio tag.
       </audio>
