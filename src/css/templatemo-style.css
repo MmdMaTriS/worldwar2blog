@@ -11,6 +11,10 @@ body {
   font-weight: 400;
   position: relative;
 }
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: rgb(0, 0, 0);
+}
 html,
 body {
   -webkit-font-smoothing: antialiased;
@@ -192,7 +196,7 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 }
 
 .navbar-default .navbar-nav li p:hover {
-  color: #eb5424;
+  color: #ff0000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
