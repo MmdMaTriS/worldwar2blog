@@ -1,59 +1,96 @@
-import React from "react";
-
+import React, { useState, useEffect } from "react";
+import contentful from "../../../Helpers/contentful";
+import "./Team.scss";
 const Team = () => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    contentful
+      .getEntries({
+        content_type: "general",
+      })
+      .then((result) => setData(result.items));
+  }, []);
+
+  const dwait = data?.find((data) => data.fields.name === "دوایت آیزنهاور");
+  const manstein = data?.find(
+    (data) => data.fields.name === "اریش فن مانشتاین"
+  );
+  const zhokov = data?.find((data) => data.fields.name === "گئورگی ژوکوف");
+
   return (
     <>
       <section id="team">
         <div class="container">
           <div class="row">
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
-              <h2>Our team</h2>
+              <h2>ژنرال ها</h2>
               <hr />
               <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoree.
+                در این بخش با بزرگترین و پر افتخار ترین ژنرال هااز قدرتمند ترین
+                کشور های حاضر در جنگ جهانی دوم آشنا خواهیم شد
               </p>
             </div>
-            <div
-              class="col-md-4 col-sm-4 col-xs-6 wow fadeIn"
-              data-wow-delay="0.9s"
-            >
-              <img
-                src="images/team1.jpg"
-                class="img-responsive"
-                alt="team img"
-              />
-              <div class="team-des">
-                <h4>Tracy</h4>
-                <h3>Designer</h3>
+
+            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div class="card">
+                <div class="card-images">
+                  <div className="headcard">
+                    <div className="headcardchild">
+                      <p>{manstein?.fields.Nationality.fields?.name}</p>
+                    </div>
+                  </div>
+                  <img
+                    src={manstein?.fields.gernealpicture[0].fields.file.url}
+                    alt="profile one"
+                  />
+                </div>
+
+                <div class="details">
+                  <h2>{manstein?.fields.name}</h2>
+                  <h3>رنکینگ نظامی: {manstein?.fields.ranking}</h3>
+                </div>
               </div>
             </div>
-            <div
-              class="col-md-4 col-sm-4 col-xs-6 wow fadeIn"
-              data-wow-delay="0.9s"
-            >
-              <img
-                src="images/team2.jpg"
-                class="img-responsive"
-                alt="team img"
-              />
-              <div class="team-des">
-                <h4>Linda</h4>
-                <h3>Manager</h3>
+
+            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div class="card">
+                <div class="card-images">
+                  <div className="headcard">
+                    <div className="headcardchild">
+                      <p>{dwait?.fields.Nationality.fields?.name}</p>
+                    </div>
+                  </div>
+                  <img
+                    src={dwait?.fields.gernealpicture[0].fields.file.url}
+                    alt="profile one"
+                  />
+                </div>
+
+                <div class="details">
+                  <h2>{dwait?.fields.name}</h2>
+                  <h3>رنکینگ نظامی: {dwait?.fields.ranking}</h3>
+                </div>
               </div>
             </div>
-            <div
-              class="col-md-4 col-sm-4 col-xs-6 wow fadeIn"
-              data-wow-delay="0.9s"
-            >
-              <img
-                src="images/team3.jpg"
-                class="img-responsive"
-                alt="team img"
-              />
-              <div class="team-des">
-                <h4>Mary</h4>
-                <h3>Developer</h3>
+
+            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div class="card">
+                <div class="card-images">
+                  <div className="headcard">
+                    <div className="headcardchild">
+                      <p>{zhokov?.fields.Nationality.fields.name}</p>
+                    </div>
+                  </div>
+                  <img
+                    src={zhokov?.fields.gernealpicture[0].fields.file.url}
+                    alt="profile one"
+                  />
+                </div>
+
+                <div class="details">
+                  <h2>{zhokov?.fields.name}</h2>
+                  <h3>رنکینگ نظامی: {zhokov?.fields.ranking}</h3>
+                </div>
               </div>
             </div>
           </div>
