@@ -6,6 +6,7 @@ const Header = () => {
     audio.volume = 0.3;
     audio.play();
   }
+
   return (
     <>
       <section id="home">
@@ -16,6 +17,7 @@ const Header = () => {
               <h1 class="wow bounce">World War 2</h1>
               <a
                 href="#intro"
+                id="getStarted"
                 class="btn btn-default smoothScroll"
                 onClick={playAudio}
               >

@@ -4,7 +4,7 @@ const WarsIntroduce = () => {
   return (
     <>
       <section id="intro">
-        <div class="container">
+        <div class="container" style={{ maxHeight: "250px" }}>
           <div class="row">
             <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
               <h4>WELCOME TO IMPULSE</h4>
