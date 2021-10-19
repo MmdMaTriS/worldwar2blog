@@ -30,7 +30,8 @@ const WarsPage = () => {
                       style={{
                         maxHeight: "220px",
                         backgroundPosition: "center",
-                        backgroundSize: "cover",
+                        // backgroundSize: "cover",
+                        objectFit: "cover",
                       }}
                     />
                   </div>
