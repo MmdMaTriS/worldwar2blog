@@ -1,7 +1,6 @@
 import { Col, Row } from "antd";
 import React, { useEffect, useState } from "react";
 import Classes from "./WarsPage.module.scss";
-import bgpic2 from "../../../images/contact-bg.jpg";
 import contentful from "../../../Helpers/contentful";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 const WarsPage = () => {
@@ -13,7 +12,6 @@ const WarsPage = () => {
       })
       .then(setData);
   }, []);
-  console.log(data);
   return (
     <>
       <section className={Classes.WarCardSEC}>
