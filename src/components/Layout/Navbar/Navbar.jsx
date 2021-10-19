@@ -21,7 +21,10 @@ const Navbar = () => {
               <span class="icon icon-bar"></span>
               <span class="icon icon-bar"></span>
             </button>
-            <p class="navbar-brand">Ulrich Waffen</p>
+            {/* <p class="navbar-brand">Greate History</p> */}
+            <p className="titr navbar-brand">
+              Greate History <br />
+            </p>
           </div>
           <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
