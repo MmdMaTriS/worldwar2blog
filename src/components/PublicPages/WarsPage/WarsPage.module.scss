@@ -40,6 +40,7 @@
     display: flex;
     justify-content: center;
     .historyMark {
+      font-family: "MmdBold";
       width: 100%;
       background-color: rgba(8, 8, 8, 0.794);
       height: 25px;
@@ -64,6 +65,7 @@
     }
   }
   .DescriptionCard {
+    font-family: "MmdReg";
     width: 95%;
     height: 88px;
     text-align: right;
