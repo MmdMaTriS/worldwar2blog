@@ -82,6 +82,7 @@ h6 {
   color: rgb(167, 167, 167);
   line-height: 20px;
   padding-bottom: 30px;
+  font-family: "Courier New", Courier, monospace;
 }
 .title p {
   color: white;
@@ -89,6 +90,7 @@ h6 {
   font-size: 25px;
   line-height: 50px;
   word-spacing: 2px;
+  font-family: "MmdReg";
   /* padding-bottom: 30px; */
 }
 .parallax-section {
@@ -395,13 +397,14 @@ transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 }
 /* contact section */
 #contact {
-  background: #f6f6f6 url("../images/contact-bg.jpg") 50% 0 repeat-y fixed;
+  background: #f6f6f6 url("../images/content4.jpg") 50% 0 repeat-y fixed;
   color: #ffffff;
   padding-top: 100px;
   padding-bottom: 80px;
 }
 #contact h2 {
   color: #ffffff;
+  font-family: "Mmdbold";
 }
 #contact .form-control {
   border-radius: 4px;
@@ -634,8 +637,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;
-  width: 634px;
-  height: 264px;
+  /* width: 634px; */
+  /* height: 264px; */
   display: block;
 }
 .gif-cont:hover .active {

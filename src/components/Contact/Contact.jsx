@@ -7,12 +7,9 @@ const Contact = () => {
         <div class="container">
           <div class="row">
             <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
-              <h2>Contact Us</h2>
+              <h2>ارتباط با ما</h2>
               <hr />
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                diam nonummy nibh euismod tincidunt ut laoree.
-              </p>
+              <p>برای ارتباط با تیم فنی ما از طریق فرم زیر اقدام کنید</p>
             </div>
             <div
               class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 contact-form wow fadeInUp"

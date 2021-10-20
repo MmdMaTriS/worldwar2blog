@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import contentful from "../../../Helpers/contentful";
 import gif from "../../../images/gif1.gif";
 import gifimg from "../../../images/gif1.jpg";
 
@@ -11,6 +12,26 @@ import gifimg3 from "../../../images/gif3.jpg";
 import gif4 from "../../../images/gif4.gif";
 import gifimg4 from "../../../images/gif4.jpg";
 const Work = () => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    contentful
+      .getEntries({
+        content_type: "wars",
+        limit: 4,
+      })
+      .then((result) => setData(result.items));
+  }, []);
+  let index1;
+  let index2;
+  let index3;
+  let index4;
+  if (data) {
+    index1 = data[0];
+    index2 = data[1];
+    index3 = data[2];
+    index4 = data[3];
+  }
+  console.log(index1, index2, index3, index4);
   return (
     <>
       <section id="work">
@@ -25,6 +46,7 @@ const Work = () => {
                 های جنگ جهانی دوم مطالعه کنید
               </p>
             </div>
+
             <div class="col-md-8 col-sm-8">
               <div class="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
                 <a href="/">
@@ -33,7 +55,7 @@ const Work = () => {
                     <img class="active" src={gif} />
                   </figure>
                   <div></div>
-                  <span>Hello</span>
+                  <span>{index1?.fields.title}</span>
                 </a>
               </div>
               <div class="col-md-6 col-sm-6 bg-black gif-cont ">
@@ -43,7 +65,7 @@ const Work = () => {
                     <img class="active" src={gif2} />
                   </figure>
                   <div></div>
-                  <span>Hello</span>
+                  <span>{index2?.fields.title}</span>
                 </a>
               </div>
               <div class="col-md-6 col-sm-6 bg-black gif-cont ">
@@ -53,7 +75,7 @@ const Work = () => {
                     <img class="active" src={gif3} />
                   </figure>
                   <div></div>
-                  <span>Hello</span>
+                  <span>{index3?.fields.title}</span>
                 </a>
               </div>
               <div class="col-md-6 col-sm-6 bg-red gif-cont ">
@@ -63,13 +85,9 @@ const Work = () => {
                     <img class="active" src={gif4} />
                   </figure>
                   <div></div>
-                  <span>Hello</span>
+                  <span>{index4?.fields.title}</span>
                 </a>
               </div>
-              {/* <div class="col-md-6 col-sm-6 bg-red">
-                <i class="fa fa-globe"></i>
-                <h3>SEO</h3>
-              </div> */}
             </div>
           </div>
         </div>

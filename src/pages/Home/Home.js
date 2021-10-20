@@ -4,7 +4,7 @@ import Team from "../../components/HomePage/Team/Team";
 import Work from "../../components/HomePage/Work/Work";
 import Portfolio from "../../components/HomePage/Portfolio/Portfolio";
 import HomeIntroduce from "../../components/Introduce/HomeIntroduce/HomeIntroduce";
-import Price from "../../components/HomePage/Price/Price";
+// import Price from "../../components/HomePage/Price/Price";
 import Header from "../../components/Layout/Header/Header";
 import audioT from "../../images/Tirailleur.mp3";
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
       <Work />
       <Team />
       <Portfolio />
-      <Price />
+      {/* <Price /> */}
       <Contact />
     </>
   );

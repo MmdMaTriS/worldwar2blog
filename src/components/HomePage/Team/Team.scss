@@ -20,6 +20,10 @@
     color: white;
 
     text-shadow: 1px 2px 3px black;
+    p {
+      font-family: "MmdReg";
+      font-size: 20px;
+    }
   }
 }
 .card {
@@ -142,8 +146,10 @@
     color: black;
   }
   h2 {
-    // margin: 30px 0;
-    padding: 0;
+    margin-top: 40px;
+    font-family: "MmdBold";
+    font-size: 20px;
+    padding-top: 0;
     text-align: center;
     color: black;
 

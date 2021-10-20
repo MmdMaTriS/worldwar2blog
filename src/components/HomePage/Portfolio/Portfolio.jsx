@@ -9,9 +9,18 @@ const Portfolio = () => {
       })
       .then((result) => setData(result.items));
   }, []);
+
   const allies = data?.filter((data) => data.fields.sidename === "متفقین");
   const axis = data?.filter((data) => data.fields.sidename === "متحدین");
-  console.log(allies, axis);
+  let th4Allies;
+  let th4Axis;
+  if (data) {
+    th4Allies = allies[0];
+    th4Axis = axis[0];
+  }
+  th4Allies = th4Allies?.fields.sidecountry.slice(0, 4);
+  th4Axis = th4Axis?.fields.sidecountry.slice(0, 4);
+
   return (
     <>
       <div id="portfolio">
@@ -27,8 +36,13 @@ const Portfolio = () => {
             </div>
 
             <div class="col-md-12 col-sm-12"></div>
-            <p className="col-md-12">متحدین</p>
-            {axis?.map((data) => {
+            <p
+              style={{ fontSize: "35px", fontFamily: "Mmdreg" }}
+              className="col-md-12"
+            >
+              متحدین
+            </p>
+            {th4Allies?.map((data) => {
               return (
                 <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
                   <a
@@ -36,84 +50,45 @@ const Portfolio = () => {
                     data-lightbox-gallery="portfolio-gallery"
                   >
                     <img
-                      src={"images/portfolio-img1.jpg"}
+                      style={{
+                        width: "100%",
+                        height: "130px",
+                        // objectFit: "contain",
+                      }}
+                      src={data?.fields.flag.fields.file.url}
                       alt="portfolio img"
                     />
                   </a>
                 </div>
               );
             })}
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img1.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img1.jpg" alt="portfolio img" />
-              </a>
-            </div>
 
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img2.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img2.jpg" alt="portfolio img" />
-              </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img3.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img3.jpg" alt="portfolio img" />
-              </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img4.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img4.jpg" alt="portfolio img" />
-              </a>
-            </div>
-            <p className="col-md-12">متفقین</p>
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img5.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img5.jpg" alt="portfolio img" />
-              </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img6.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img6.jpg" alt="portfolio img" />
-              </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img7.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img7.jpg" alt="portfolio img" />
-              </a>
-            </div>
-
-            <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
-              <a
-                href="images/portfolio-img8.jpg"
-                data-lightbox-gallery="portfolio-gallery"
-              >
-                <img src="images/portfolio-img8.jpg" alt="portfolio img" />
-              </a>
-            </div>
+            <p
+              className="col-md-12"
+              style={{ fontSize: "35px", fontFamily: "Mmdreg" }}
+            >
+              متفقین
+            </p>
+            {th4Axis?.map((data) => {
+              return (
+                <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
+                  <a
+                    href="images/portfolio-img1.jpg"
+                    data-lightbox-gallery="portfolio-gallery"
+                  >
+                    <img
+                      style={{
+                        width: "100%",
+                        height: "120px",
+                        // objectFit: "contain",
+                      }}
+                      src={data?.fields.flag.fields.file.url}
+                      alt="portfolio img"
+                    />
+                  </a>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
