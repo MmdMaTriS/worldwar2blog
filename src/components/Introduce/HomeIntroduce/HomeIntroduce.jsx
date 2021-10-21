@@ -10,9 +10,9 @@ const HomeIntroduce = () => {
   return (
     <>
       <section id="intro">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
               <h4 className="welcomer">Welcome To Greate History</h4>
               <h2>جنگ جهانی دوم</h2>
               <hr />

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import contentful from "../../../Helpers/contentful";
 import gif from "../../../images/gif1.gif";
 import gifimg from "../../../images/gif1.jpg";
@@ -31,13 +32,13 @@ const Work = () => {
     index3 = data[2];
     index4 = data[3];
   }
-  console.log(index1, index2, index3, index4);
+
   return (
     <>
       <section id="work">
-        <div class="container">
-          <div class="row ">
-            <div class="col-md-4 col-sm-4 title battlecards">
+        <div className="container">
+          <div className="row ">
+            <div className="col-md-4 col-sm-4 title battlecards">
               <h2>نبردها</h2>
               <hr />
               <p>
@@ -47,42 +48,42 @@ const Work = () => {
               </p>
             </div>
 
-            <div class="col-md-8 col-sm-8">
-              <div class="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
+            <div className="col-md-8 col-sm-8">
+              <div className="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
                 <a href="/">
                   <figure>
-                    <img class="static" src={gifimg} />
-                    <img class="active" src={gif} />
+                    <img className="static" src={gifimg} />
+                    <img className="active" src={gif} />
                   </figure>
                   <div></div>
                   <span>{index1?.fields.title}</span>
                 </a>
               </div>
-              <div class="col-md-6 col-sm-6 bg-black gif-cont ">
-                <a href="/">
+              <div className="col-md-6 col-sm-6 bg-black gif-cont ">
+                <Link to={`/war/`}>
                   <figure>
-                    <img class="static" src={gifimg2} />
-                    <img class="active" src={gif2} />
+                    <img className="static" src={gifimg2} />
+                    <img className="active" src={gif2} />
                   </figure>
                   <div></div>
                   <span>{index2?.fields.title}</span>
-                </a>
+                </Link>
               </div>
-              <div class="col-md-6 col-sm-6 bg-black gif-cont ">
+              <div className="col-md-6 col-sm-6 bg-black gif-cont ">
                 <a href="/">
                   <figure>
-                    <img class="static" src={gifimg3} />
-                    <img class="active" src={gif3} />
+                    <img className="static" src={gifimg3} />
+                    <img className="active" src={gif3} />
                   </figure>
                   <div></div>
                   <span>{index3?.fields.title}</span>
                 </a>
               </div>
-              <div class="col-md-6 col-sm-6 bg-red gif-cont ">
+              <div className="col-md-6 col-sm-6 bg-red gif-cont ">
                 <a href="/">
                   <figure>
-                    <img class="static" src={gifimg4} />
-                    <img class="active" src={gif4} />
+                    <img className="static" src={gifimg4} />
+                    <img className="active" src={gif4} />
                   </figure>
                   <div></div>
                   <span>{index4?.fields.title}</span>

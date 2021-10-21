@@ -10,15 +10,15 @@ const Header = () => {
   return (
     <>
       <section id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12">
-              <h2 class="wow bounceInDown rotate">Historical</h2>
-              <h1 class="wow bounce">World War 2</h1>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 col-sm-12">
+              <h2 className="wow bounceInDown rotate">Historical</h2>
+              <h1 className="wow bounce">World War 2</h1>
               <a
                 href="#intro"
                 id="getStarted"
-                class="btn btn-default smoothScroll"
+                className="btn btn-default smoothScroll"
                 onClick={playAudio}
               >
                 GET START!

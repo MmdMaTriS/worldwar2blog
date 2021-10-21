@@ -38,11 +38,14 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
+
         <Route path="/country/:id"></Route>
+
         <Route path="/allie/akbar" exact>
           <AlliesSingle />
         </Route>
         <Route path="/war/:id"></Route>
+
         <Route path="/general/:id"></Route>
       </Switch>
     </Layout>
