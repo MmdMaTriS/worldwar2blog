@@ -20,9 +20,9 @@ const Team = () => {
   return (
     <>
       <section id="team">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
               <h2>ژنرال ها</h2>
               <hr />
               <p>
@@ -31,9 +31,9 @@ const Team = () => {
               </p>
             </div>
 
-            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
-              <div class="card">
-                <div class="card-images">
+            <div className="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div className="card">
+                <div className="card-images">
                   <div className="headcard">
                     <div className="headcardchild">
                       <p>{manstein?.fields.Nationality.fields?.name}</p>
@@ -45,16 +45,16 @@ const Team = () => {
                   />
                 </div>
 
-                <div class="details">
+                <div className="details">
                   <h2>{manstein?.fields.name}</h2>
                   <h3>رنکینگ نظامی: {manstein?.fields.ranking}</h3>
                 </div>
               </div>
             </div>
 
-            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
-              <div class="card">
-                <div class="card-images">
+            <div className="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div className="card">
+                <div className="card-images">
                   <div className="headcard">
                     <div className="headcardchild">
                       <p>{dwait?.fields.Nationality.fields?.name}</p>
@@ -66,16 +66,16 @@ const Team = () => {
                   />
                 </div>
 
-                <div class="details">
+                <div className="details">
                   <h2>{dwait?.fields.name}</h2>
                   <h3>رنکینگ نظامی: {dwait?.fields.ranking}</h3>
                 </div>
               </div>
             </div>
 
-            <div class="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
-              <div class="card">
-                <div class="card-images">
+            <div className="card-wrapper col-md-4 col-sm-4 col-xs-6 wow fadeIn">
+              <div className="card">
+                <div className="card-images">
                   <div className="headcard">
                     <div className="headcardchild">
                       <p>{zhokov?.fields.Nationality.fields.name}</p>
@@ -87,7 +87,7 @@ const Team = () => {
                   />
                 </div>
 
-                <div class="details">
+                <div className="details">
                   <h2>{zhokov?.fields.name}</h2>
                   <h3>رنکینگ نظامی: {zhokov?.fields.ranking}</h3>
                 </div>

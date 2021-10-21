@@ -39,13 +39,20 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
+
         <Route path="/country/:id"></Route>
+
         <Route path="/allie/akbar" exact>
           <AlliesSingle />
         </Route>
+<<<<<<< HEAD
         <Route path="/war/:id">
           <SingleWarPage />
         </Route>
+=======
+        <Route path="/war/:id"></Route>
+
+>>>>>>> 8448f44bfd48c33262cf8144bf19707f426bf931
         <Route path="/general/:id"></Route>
       </Switch>
     </Layout>

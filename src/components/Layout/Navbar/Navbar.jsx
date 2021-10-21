@@ -6,28 +6,28 @@ const Navbar = () => {
   return (
     <>
       <div
-        class="navbar navbar-default navbar-static-top"
+        className="navbar navbar-default navbar-static-top"
         role="navigation"
         id="nav12"
       >
-        <div class="container">
-          <div class="navbar-header">
+        <div className="container">
+          <div className="navbar-header">
             <button
-              class="navbar-toggle"
+              className="navbar-toggle"
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              <span class="icon icon-bar"></span>
-              <span class="icon icon-bar"></span>
-              <span class="icon icon-bar"></span>
+              <span className="icon icon-bar"></span>
+              <span className="icon icon-bar"></span>
+              <span className="icon icon-bar"></span>
             </button>
-            {/* <p class="navbar-brand">Greate History</p> */}
+            {/* <p className="navbar-brand">Greate History</p> */}
             <p className="titr navbar-brand">
               Greate History <br />
             </p>
           </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
+          <div className="collapse navbar-collapse">
+            <ul className="nav navbar-nav navbar-right">
               <li>
                 <Link to="/">
                   <p>HOME</p>

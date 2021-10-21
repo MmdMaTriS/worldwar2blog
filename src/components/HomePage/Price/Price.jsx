@@ -4,8 +4,8 @@ const Price = () => {
   return (
     <>
       <div id="price">
-        <div class="container">
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <div className="container">
+          <div className="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
             <h2>Our Plans</h2>
             <hr />
             <p>
@@ -13,12 +13,12 @@ const Price = () => {
               nonummy nibh euismod tincidunt ut laoree.
             </p>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="plan wow bounceIn" data-wow-delay="0.3s">
-              <div class="plan_title">
+          <div className="col-md-4 col-sm-6">
+            <div className="plan wow bounceIn" data-wow-delay="0.3s">
+              <div className="plan_title">
                 <h3>Basic</h3>
               </div>
-              <div class="plan_sub_title">
+              <div className="plan_sub_title">
                 <h2>$ 25</h2>
                 <small>Per month</small>{" "}
               </div>
@@ -27,15 +27,15 @@ const Price = () => {
                 <li>20 GB SPACE</li>
                 <li>20 BASIC THEMES</li>
               </ul>
-              <button class="btn btn-warning">Get started</button>
+              <button className="btn btn-warning">Get started</button>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="plan wow bounceIn" data-wow-delay="0.6s">
-              <div class="plan_title">
+          <div className="col-md-4 col-sm-6">
+            <div className="plan wow bounceIn" data-wow-delay="0.6s">
+              <div className="plan_title">
                 <h3>Business</h3>
               </div>
-              <div class="plan_sub_title">
+              <div className="plan_sub_title">
                 <h2>$ 50</h2>
                 <small>per month</small>{" "}
               </div>
@@ -44,15 +44,15 @@ const Price = () => {
                 <li>50 GB SPACE</li>
                 <li>30 PRO THEMES</li>
               </ul>
-              <button class="btn btn-warning">Get started</button>
+              <button className="btn btn-warning">Get started</button>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="plan wow bounceIn" data-wow-delay="0.9s">
-              <div class="plan_title">
+          <div className="col-md-4 col-sm-6">
+            <div className="plan wow bounceIn" data-wow-delay="0.9s">
+              <div className="plan_title">
                 <h3>Professional</h3>
               </div>
-              <div class="plan_sub_title">
+              <div className="plan_sub_title">
                 <h2>$ 75</h2>
                 <small>per month</small>{" "}
               </div>
@@ -61,7 +61,7 @@ const Price = () => {
                 <li>100 GB SPACE</li>
                 <li>60 PRO THEMES</li>
               </ul>
-              <button class="btn btn-warning">Get started</button>
+              <button className="btn btn-warning">Get started</button>
             </div>
           </div>
         </div>

@@ -24,9 +24,9 @@ const Portfolio = () => {
   return (
     <>
       <div id="portfolio">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
               <h2>طرفین حاضر</h2>
               <hr />
               <p>
@@ -35,7 +35,7 @@ const Portfolio = () => {
               </p>
             </div>
 
-            <div class="col-md-12 col-sm-12"></div>
+            <div className="col-md-12 col-sm-12"></div>
             <p
               style={{ fontSize: "35px", fontFamily: "Mmdreg" }}
               className="col-md-12"
@@ -44,7 +44,11 @@ const Portfolio = () => {
             </p>
             {th4Allies?.map((data) => {
               return (
-                <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
+                <div
+                  key={data.fields.name}
+                  className="col-md-3 col-sm-3 wow fadeIn"
+                  data-wow-delay="0.6s"
+                >
                   <a
                     href="images/portfolio-img1.jpg"
                     data-lightbox-gallery="portfolio-gallery"
@@ -52,8 +56,8 @@ const Portfolio = () => {
                     <img
                       style={{
                         width: "100%",
-                        height: "130px",
-                        // objectFit: "contain",
+                        height: "148px",
+                        objectFit: "cover",
                       }}
                       src={data?.fields.flag.fields.file.url}
                       alt="portfolio img"
@@ -71,7 +75,11 @@ const Portfolio = () => {
             </p>
             {th4Axis?.map((data) => {
               return (
-                <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s">
+                <div
+                  key={data.fields.name}
+                  className="col-md-3 col-sm-3 wow fadeIn"
+                  data-wow-delay="0.6s"
+                >
                   <a
                     href="images/portfolio-img1.jpg"
                     data-lightbox-gallery="portfolio-gallery"
@@ -79,8 +87,8 @@ const Portfolio = () => {
                     <img
                       style={{
                         width: "100%",
-                        height: "120px",
-                        // objectFit: "contain",
+                        height: "148px",
+                        objectFit: "cover",
                       }}
                       src={data?.fields.flag.fields.file.url}
                       alt="portfolio img"
