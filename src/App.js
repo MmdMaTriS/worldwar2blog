@@ -15,6 +15,7 @@ import "./css/animate.min.css";
 import "./css/templatemo-style.css";
 import "./css/nivo-lightbox.css";
 import "./css/font-awesome.min.css";
+import SingleWarPage from "./components/SinglePages/SingleWarPage/SingleWarPage";
 
 function App() {
   return (
@@ -42,7 +43,9 @@ function App() {
         <Route path="/allie/akbar" exact>
           <AlliesSingle />
         </Route>
-        <Route path="/war/:id"></Route>
+        <Route path="/war/:id">
+          <SingleWarPage />
+        </Route>
         <Route path="/general/:id"></Route>
       </Switch>
     </Layout>

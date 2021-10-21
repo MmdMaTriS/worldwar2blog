@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Classes from "./WarsPage.module.scss";
 import contentful from "../../../Helpers/contentful";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+import { Link } from "react-router-dom";
 const WarsPage = () => {
   const [data, setData] = useState(null);
   useEffect(() => {
@@ -12,6 +13,7 @@ const WarsPage = () => {
       })
       .then(setData);
   }, []);
+  console.log(data);
   return (
     <>
       <section className={Classes.WarCardSEC}>
@@ -53,7 +55,9 @@ const WarsPage = () => {
                     </p>
                   </div>
                   <div className={Classes.CardBTN}>
-                    <button>...بیشتر بدانیم</button>
+                    <Link to={`war/${r.sys.id}`}>
+                      <button>...بیشتر بدانیم</button>
+                    </Link>
                   </div>
                 </div>
               </Col>
