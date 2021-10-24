@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Classes from "./SingleWarPage.module.scss";
-import SomeImg from "../../../images/bg.jpg";
-import team2 from "../../../images/team2.jpg";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -142,7 +140,7 @@ const SingleWarPage = () => {
 
       <section className={Classes.WarFooterSection}>
         <section className={Classes.Countries}>
-          <h3>Countries</h3>
+          <h3 style={{ fontFamily: "MmdBold" }}>کشور های درگیر</h3>
           <Swiper
             spaceBetween={50}
             slidesPerView={2}
@@ -176,7 +174,7 @@ const SingleWarPage = () => {
           </Swiper>
         </section>
         <section className={Classes.Generals}>
-          <h3>Generals</h3>
+          <h3 style={{ fontFamily: "MmdBold" }}>ژنرال ها</h3>
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
@@ -200,9 +198,10 @@ const SingleWarPage = () => {
                       }
                       alt=""
                       style={{
-                        maxWidth: "100%",
-                        maxHeight: "300px",
-                        backgroundSize: "contain",
+                        maxWidth: "70%",
+                        maxHeight: "400px",
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
                       }}
                     />
                   </div>
@@ -215,6 +214,7 @@ const SingleWarPage = () => {
                       backgroundColor: "white",
                       display: "inline",
                       fontSize: "20px",
+                      marginRight: "30px",
                     }}
                   >
                     {gen.fields ? gen.fields.name : ""}
