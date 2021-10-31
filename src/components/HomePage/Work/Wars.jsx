@@ -35,7 +35,7 @@ const Wars = () => {
     index3 = data[2];
     index4 = data[3];
   }
-  console.log(index1?.sys.id);
+
   return (
     <>
       <section id="work">
@@ -53,7 +53,7 @@ const Wars = () => {
 
             <div className="col-md-8 col-sm-8">
               <div className="col-md-6 col-sm-6 bg-red p-0 gif-cont ">
-                <Link to={`/war/${index1?.sys.id}`}>
+                <Link to={`/wars/${index1?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg} />
                     <img className="active" src={gif} />
@@ -63,7 +63,7 @@ const Wars = () => {
                 </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <Link to={`/war/${index2?.sys.id}`}>
+                <Link to={`/wars/${index2?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg2} />
                     <img className="active" src={gif2} />
@@ -73,7 +73,7 @@ const Wars = () => {
                 </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-black gif-cont ">
-                <Link to={`/war/${index3?.sys.id}`}>
+                <Link to={`/wars/${index3?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg3} />
                     <img className="active" src={gif3} />
@@ -83,7 +83,7 @@ const Wars = () => {
                 </Link>
               </div>
               <div className="col-md-6 col-sm-6 bg-red gif-cont ">
-                <Link to={`/war/${index4?.sys.id}`}>
+                <Link to={`/wars/${index4?.sys.id}`}>
                   <figure>
                     <img className="static" src={gifimg4} />
                     <img className="active" src={gif4} />

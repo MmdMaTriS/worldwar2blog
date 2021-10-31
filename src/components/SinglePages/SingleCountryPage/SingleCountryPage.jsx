@@ -12,55 +12,40 @@ const SingleCountryPage = () => {
     contentful.getEntry(`${params.id}`).then(setData);
   }, []);
   window.scrollTo(0, 0);
+
   return (
     <div className="Generals-main">
       <div className="col-md-12 g-title">
         <h1>{data?.fields.name}</h1>
       </div>
       <div className="col-md-12">
-        <div className="col-md-4 g-s-image">
+        <div className="col-md-12 g-s-image">
           <div className="card-wrappers col-md-12">
-            <div className="cards">
-              <div className="card-imagess">
+            <div className="Count-card-imagesc">
+              <div className="Count-card-images">
                 <div className="headcards">
                   <div className="headcardchilds">
-                    <p>{data?.fields.birthdathe}</p>
+                    <p>پرچم</p>
                   </div>
                 </div>
-                <img src={data?.fields.gernealpicture[0].fields.file.url} />
+                <img src={data?.fields.flag.fields.file.url} />
                 <div className="footercard">
                   <div className="footercardchilds">
-                    <p>{data?.fields.ranking}</p>
+                    <p>{data?.fields.side.fields.sidename}</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div className="country col-md-12 card-wrappers2 ">
-            <Link to={`/country/${data?.fields.Nationality.sys.id}`}>
-              <div className="cards2">
-                <div className="card-imagess2">
-                  <div className="footercard">
-                    <div className="footercardchilds">
-                      <p>{data?.fields.Nationality.fields.name}</p>
-                    </div>
-                  </div>
-                  <div className="headcards">
-                    <div className="headcardchilds">
-                      <p>ملیت</p>
-                    </div>
-                  </div>
-                  <img
-                    src={data?.fields.Nationality.fields.flag.fields.file.url}
-                  />
-                </div>
-              </div>
-            </Link>
-          </div>
         </div>
-        <div className="col-md-8 g-d-desc">
+        <div className="col-md-12 g-d-desc">
           <p>
+            <span>درباره ی کشور</span>
+            {!data?.fields.aboutgenerals ? (
+              <div style={{ backgroundColor: "red" }}>No Data</div>
+            ) : (
+              <div></div>
+            )}
             <div
               dangerouslySetInnerHTML={{
                 __html: documentToHtmlString(data?.fields.aboutgenerals),

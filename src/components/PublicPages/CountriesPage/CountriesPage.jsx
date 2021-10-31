@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Classes from "./Countries.module.scss";
 import contentful from "../../../Helpers/contentful";
-import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+
 import { Link } from "react-router-dom";
 import { Col, Row } from "antd";
 const CountriesPage = () => {
@@ -13,7 +13,7 @@ const CountriesPage = () => {
       })
       .then(setData);
   }, []);
-  console.log(data?.items);
+
   return (
     <>
       <section className={Classes.WarCardSEC}>
@@ -43,7 +43,7 @@ const CountriesPage = () => {
                     </div>
                   </div>
                   <div className={Classes.CardBTN}>
-                    <Link to={`country/${r.sys.id}`}>
+                    <Link to={`countries/${r.sys.id}`}>
                       <button>...بیشتر بدانیم</button>
                     </Link>
                   </div>

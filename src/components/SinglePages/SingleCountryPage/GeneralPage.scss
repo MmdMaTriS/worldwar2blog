@@ -45,11 +45,11 @@
     color: white;
   }
 }
-.cards {
+.Count-card-imagesc {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 350px;
+  width: 740px;
   height: 450px;
   transform: translate(-50%, -50%);
   border-radius: 16px;
@@ -58,7 +58,7 @@
   cursor: pointer;
   transition: 0.5s;
 
-  .card-imagess {
+  .Count-card-images {
     position: absolute;
     top: 0px;
     left: 0px;

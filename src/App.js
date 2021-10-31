@@ -16,7 +16,7 @@ import "./css/templatemo-style.css";
 import "./css/nivo-lightbox.css";
 import "./css/font-awesome.min.css";
 ///////////////////////////////////// Signle Pages
-import AlliesSingle from "./pages/AlliesSingle/AlliesSingle";
+import SidesSingle from "./pages/SidesSingle/SidesSingle";
 import SingleWarPage from "./components/SinglePages/SingleWarPage/SingleWarPage";
 import SingleGeneralPage from "./components/SinglePages/SingleGeneralPage/SingleGeneralPage";
 import SingleCountryPage from "./components/SinglePages/SingleCountryPage/SingleCountryPage";
@@ -27,32 +27,43 @@ function App() {
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/Sides" exact>
-          <Sides />
-        </Route>
-        <Route path="/countries" exact>
-          <Countries />
-        </Route>
-        <Route path="/generals" exact>
-          <Generals />
-        </Route>
+
         <Route path="/wars" exact>
           <Wars />
         </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/country/:id">
-          <SingleCountryPage />
-        </Route>
-        <Route path="/allie/:id" exact>
-          <AlliesSingle />
-        </Route>
-        <Route path="/war/:id">
+
+        <Route path="/wars/:id">
           <SingleWarPage />
         </Route>
+
+        <Route path="/generals" exact>
+          <Generals />
+        </Route>
+
         <Route path="/generals/:id">
           <SingleGeneralPage />
+        </Route>
+
+        <Route path="/countries" exact>
+          <Countries />
+        </Route>
+
+        <Route path="/countries/:id">
+          <SingleCountryPage />
+        </Route>
+
+        <Route path="/Sides" exact>
+          <Sides />
+        </Route>
+        <Route path="/Sides/:id" exact>
+          <SidesSingle />
+        </Route>
+        <Route path="/Sides/countries/:id">
+          <SingleCountryPage />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
     </Layout>

@@ -56,7 +56,7 @@ const Sides = () => {
                     <img src={data?.fields.flag.fields.file.url} />
                     <div class="info">
                       <h3>{data.fields.name}</h3>
-                      <Link to={`/allie/${data?.sys.id}`}>
+                      <Link to={`/countries/${data?.sys.id}`}>
                         <button>Read More</button>
                       </Link>
                     </div>
@@ -87,7 +87,7 @@ const Sides = () => {
                   <div class="info">
                     <h3>{data.fields.name}</h3>
 
-                    <Link to={`/allie/${data?.sys.id}`}>
+                    <Link to={`/countries/${data?.sys.id}`}>
                       <button>Read More</button>
                     </Link>
                   </div>
