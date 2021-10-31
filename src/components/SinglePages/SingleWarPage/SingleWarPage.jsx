@@ -15,7 +15,7 @@ const SingleWarPage = () => {
   useEffect(() => {
     contentful.getEntry(`${id}`).then(setData);
   }, []);
-  console.log(data);
+  window.scrollTo(0, 0);
   return (
     <>
       <section className={Classes.WarSection}>

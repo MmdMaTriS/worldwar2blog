@@ -12,9 +12,7 @@ const SingleGeneralPage = () => {
   useEffect(() => {
     contentful.getEntry(`${params.id}`).then(setData);
   }, []);
-  if (data) {
-    console.log(data);
-  }
+  window.scrollTo(0, 0);
   return (
     <div className="Generals-main">
       <div className="col-md-12 g-title">

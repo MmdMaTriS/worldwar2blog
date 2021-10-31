@@ -1,6 +1,6 @@
 import React from "react";
 
-const AlliesIntroduce = () => {
+const SidesIntroduce = () => {
   return (
     <>
       <section id="intro">
@@ -24,4 +24,4 @@ const AlliesIntroduce = () => {
   );
 };
 
-export default AlliesIntroduce;
+export default SidesIntroduce;
